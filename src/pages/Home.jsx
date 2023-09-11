@@ -61,16 +61,16 @@ const HomePage = () => {
                                 ))
                             }
                         </select>
-                        <div className='flex items-center bg-gray-100 p-3 gap-1 rounded-lg'>
-                            <input type="text" className='bg-transparent outline-none' placeholder='Search'/>
-                             <button><BsSearch /></button>
-                        </div>
                     </ul>
                 </nav>
             </div>
             <div className='min-h-screen w-full relative'>
                 {newsData.length > 0 ? (
                     <>
+                        <div className='flex items-center m-auto bg-gray-100 p-3 gap-1 rounded-lg'>
+                            <input type="text" className='bg-transparent outline-none w-3/4' placeholder='Search'/>
+                             <button><BsSearch /></button>
+                        </div>
                         <h1 className='font-bold py-3 text-4xl text-gray-500'>Top Headlines</h1>
                         <section className='flex flex-col md:flex-row gap-2 w-full'>
                             <a href={newsData[0].url} className="md:w-2/3  w-full md:mx-4 mx-0" target="_blank" rel='noreferrer'>
