@@ -99,9 +99,11 @@ const HomePage = () => {
                                     ))
                                 }
                             </>
-                            ) : (<>
-
-                            </>)
+                            ) : (
+                            <div>
+                                <p>No results found for {searchQuery}</p>
+                            </div>
+                            )
                         }
                     </div>
                     ) : (

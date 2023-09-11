@@ -54,7 +54,7 @@ export const Countries = [
         code:'cz'
     },
     {
-        label:'',
+        label:'Denmark',
         code:'de'
     },
     {
@@ -66,7 +66,7 @@ export const Countries = [
         code:'fr'
     },
     {
-        label:'',
+        label:'United Kingdom',
         code:'gb'
     },
     {
@@ -162,7 +162,7 @@ export const Countries = [
         code:'ro'
     },
     {
-        label:'',
+        label:'Serbia',
         code:'rs'
     },
     {
