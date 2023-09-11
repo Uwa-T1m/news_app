@@ -67,7 +67,7 @@ const HomePage = () => {
             <div className='min-h-screen w-full relative'>
                 {newsData.length > 0 ? (
                     <>
-                        <div className='flex items-center m-auto bg-gray-100 p-3 gap-1 rounded-lg'>
+                        <div className='flex items-center m-auto w-[90%] justify-between bg-white p-3 gap-1 rounded-xl'>
                             <input type="text" className='bg-transparent outline-none w-3/4' placeholder='Search'/>
                              <button><BsSearch /></button>
                         </div>
