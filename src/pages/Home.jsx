@@ -44,7 +44,7 @@ const HomePage = () => {
     const otherNews = newsData.slice(4)
 
     return (
-        <main className="bg-gray-100 relative min-h-[inherit] w-full">
+        <main className="bg-gray-100 relative min-h-screen w-full">
             <div className='z-10 sticky top-0 w-full'>
                 <nav className="w-full p-4 bg-white shadow-md flex items-center justify-between mb-3">
                     <div className="flex gap-4 items-center">
@@ -82,6 +82,7 @@ const HomePage = () => {
                         {
                             newsData.length > 0 ? (
                             <>
+                            <h2>Showing results for {searchQuery}</h2>
                                 {
                                     newsData.map(article => (
                                         <Card className='w-[80%] h-auto m-auto mt-4'>
@@ -98,7 +99,9 @@ const HomePage = () => {
                                     ))
                                 }
                             </>
-                            ) : (<></>)
+                            ) : (<>
+
+                            </>)
                         }
                     </div>
                     ) : (
@@ -181,9 +184,10 @@ const HomePage = () => {
                                 </div>
                             </>
                         ) : (
-                            <div className='w-full h-screen z-50 py-8 flex fixed top-0 left-0 items-center justify-center bg-black/10 m-auto mt-[30%]'>
-                                <p className='text-2xl uppercase italic text-center font-serif font-extrabold'>Your News Is Loading...</p>
-                            </div>
+                        <div className="w-full h-screen fixed top-0 left-0 z-[100000] gap-4 flex items-center justify-center flex-col bg-white/10">
+                            <div className='h-56 w-56 rounded-full border-[15px] border-t-gray-500 animate-spin'></div>
+                        <p className='text-xl font-medium'>Loading ...</p>
+                        </div>
                         )}
                     </>)
                 }
